@@ -10,7 +10,7 @@ class Leap_year_class:
             return "Invalid input (sign error)"
 
         year=int(self.n)
-        if year%4==0 and year%100!=0:
+        if year%4==0 and year%100!=0 or year%400==0:
             print("{0} is a leap year".format(year))
         else:
             print("{0} is not a leap year".format(year))
